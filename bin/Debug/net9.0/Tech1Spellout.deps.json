@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Tech1Spellout/1.0.0": {
+        "runtime": {
+          "Tech1Spellout.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tech1Spellout/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

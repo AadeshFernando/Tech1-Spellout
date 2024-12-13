@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+} 
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Amount">Enter the amount in dollars:</label>
+        <input type="text" class="form-control" id="Amount" name="Amount" value="@Model.Amount" />
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+</form>
+
+@if (Model.Outcome != null)
+{
+    <h3>Amount in words: </h3>
+    <p>@Model.Outcome</p>
+}
+
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
